@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updated Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        /* Set the height of the first div to 400px */
+        .left-content {
+            height: 400px;  /* Set the desired height */
+            overflow: hidden;  /* Ensures no content overflows */
+        }
+        .first-image img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;  /* Ensures the image covers the entire div */
+        }
+
+        /* Apply margin between the first and second columns */
+        .chotadiv {
+            margin-top: 20px;  /* Adjust this value for more/less space */
+        }
+
+        /* Ensure the second column is relative for positioning */
+        .right-content1 {
+            position: relative;
+            height: 100%; /* Make sure the container height is filled */
+        }
+
+        /* Style to align images at the bottom right */
+        .right-content1 .row {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+  <!-- ***** Explore Area Starts ***** -->
+  <section class="section" id="explore">
+    <div class="container">
+      <div class="row">
+        <!-- First Column: Split into two rows -->
+        <div class="col-lg-6 d-flex flex-column">
+          <div class="left-content mb-3">
+            <div class="first-image">
+              <img src="images/pic4.jpeg" class="img-fluid" alt="Featured Image Row 1">
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Column: Split into two rows and two columns, images aligned at the bottom right -->
+        <div class="col-lg-6 chotadiv">
+          <div class="right-content1">
+            <div class="row">
+              <div class="col-lg-6 mb-3">
+                <div class="first-image">
+                  <img src="images/pic2.jpeg" class="img-fluid" alt="Image 1">
+                </div>
+              </div>
+              <div class="col-lg-6 mb-3">
+                <div class="first-image">
+                  <img src="images/pic2.jpeg" class="img-fluid" alt="Image 2">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="second-image">
+                  <img src="images/pic2.jpeg" class="img-fluid" alt="Image 3">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="first-image">
+                  <img src="images/pic2.jpeg" class="img-fluid" alt="Image 4">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Explore Area Ends ***** -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
